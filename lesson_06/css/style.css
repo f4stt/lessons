@@ -1,0 +1,89 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: #2f302c;
+	font-weight: 700;
+	line-height: 1.4;
+}
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 96px;
+	line-height: 1.04167;
+}
+.menu > .item {
+	font-weight: 700;
+	font-size: 16px;
+	display: inline-block;
+}
+.menu > .item:not(:last-child) {
+	margin-right: 20px;
+}
+.section {
+	background-image: url(../img/furniture_gallery.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 110px 0;
+}
+.section-content {
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: 394px;
+}
+.section-suptitle {
+	margin-bottom: 20px;
+}
+
+.section-title {
+	position: relative;
+	padding-bottom: 16px;
+}
+
+.section-title::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 308px;
+	background-color: #2f302c;
+	height: 2px;
+}
+.section-subtitle {
+	margin-top: 36px;
+	margin-bottom: 20px;
+}
+.section-description {
+	font-weight: 500;
+	font-size: 16px;
+	color: #7e7f7c;
+	line-height: 1.25;
+	max-width: 380px;
+}
+.second {
+	padding: 80px 0;
+	max-width: 300px;
+	margin: 0 auto;
+}
+.list-item {
+	background-image: url(../img/check.svg);
+	background-repeat: no-repeat;
+	padding-left: 42px;
+	min-height: 32px;
+	line-height: 2.2;
+	background-position: left center;
+	margin-bottom: 20px;
+}
+.list-item p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	color: #252b42;
+}
+.list-item.checked {
+ 	background-image: url(../img/uncheck.svg);
+}
