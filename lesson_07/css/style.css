@@ -1,0 +1,270 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: #2f302c;
+	font-weight: 700;
+	line-height: 1.4;
+}
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 96px;
+	line-height: 1.04167;
+}
+.menu > .item {
+	font-weight: 700;
+	font-size: 16px;
+	display: inline-block;
+}
+.menu .item:hover {
+	text-decoration: underline;
+}
+.menu .item:active{
+	color: red;
+}
+.menu .item:focus{
+	outline: 2px dotted red;
+}
+.menu .item:first-child {
+	color: aqua;
+}
+.menu .item:last-child {
+	color: aqua;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.menu > *:not(:last-child) {
+	margin-right: 20px;
+}
+.section {
+	background-image: url(../img/furniture_gallery.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 110px 0;
+}
+.section-content {
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: 394px;
+}
+.section-suptitle {
+	margin-bottom: 20px;
+}
+
+.section-title {
+	display: inline-block;
+}
+
+.section-title::after {
+	content: '';
+	display: block;
+	max-width: 0;
+	background-color: #2f302c;
+	margin-top: 12px;
+	height: 2px;
+	transition: all ease-in 0.5s;
+}
+.section-title:hover::after {
+	max-width: 64%;
+}
+.section-subtitle {
+	margin-top: 36px;
+	margin-bottom: 20px;
+}
+.section-description {
+	font-weight: 500;
+	font-size: 16px;
+	color: #7e7f7c;
+	line-height: 1.25;
+	max-width: 380px;
+}
+.second {
+	padding: 80px 0;
+	max-width: 300px;
+	margin: 0 auto;
+}
+.list{
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.list-item:not(:last-child){
+	margin-bottom: 10px;
+}
+.list-item p::before {
+	content: '';
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	margin-right: 10px;
+	background-image: url(../img/check.svg);
+	background-repeat: no-repeat;
+}
+.list-item p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	color: #252b42;
+}
+
+.block {
+	width: 100px;
+	height: 100px;
+	display: none;
+}
+
+.block:target {
+	background-color: #141515;
+	display: block;
+}
+
+.text p:first-of-type {
+	color: #0be4e4;
+}
+
+.text p:last-of-type {
+	color: rgb(11, 220, 150);
+  } 
+.text p:nth-child(3) {
+	color: #e71c1c;
+}
+.text p:nth-of-type(3) {
+	color: rgb(28, 28, 209);
+}
+
+.card {
+	padding: 10px;
+	background-color: #7e7f7c;
+}
+.card > * {
+	margin-bottom: 20px;
+}
+.card-title {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.card-image {
+	max-width: 280px;
+}
+.card-desc {
+	text-align: justify;
+}
+.card > *:last-child {
+	margin-bottom: 0;
+}
+
+[class*="block-"]:not(.block-1, .block-10) {
+	visibility: hidden;
+}
+
+.section-second>*:hover + *, .section-second>*:hover {
+	visibility: visible;
+}
+
+.block-1 {
+	display: inline-block;
+	background: url(../img/square.png) no-repeat;
+	background-size: 100%;
+	height: 60px;
+	width: 95px;
+}
+
+.block-1 p {
+	padding-top: 15px;
+}
+
+.block-2 {
+	width: 180px;
+	height: 20px;
+	margin-top: -20px;
+	margin-left: 90px;
+	background: url(../img/square.png);
+}
+
+.block-3 {
+	width: 20px;
+	height: 100px;
+	margin-left: 180px;
+	background: url(../img/square.png);
+}
+
+.block-4 {
+	margin-left: 200px;
+	margin-top: -20px;
+	width: 200px;
+	height: 10px;
+	background: url(../img/square.png);
+}
+
+.block-5 {
+	margin-left: 348px;
+	margin-top: -10px;
+	width: 20px;
+	height: 170px;
+	background: url(../img/square.png);
+}
+
+.block-6 {
+	margin-left: 208px;
+	margin-top: -10px;
+	width: 200px;
+	height: 17px;
+	background: url(../img/square.png);
+}
+
+.block-7 {
+	margin-left: 208px;
+	margin-top: -10px;
+	width: 7px;
+	height: 170px;
+	background: url(../img/square.png);
+}
+
+.block-8 {
+	margin-left: 208px;
+	margin-top: -10px;
+	width: 500px;
+	height: 7px;
+	background: url(../img/square.png);
+}
+
+.block-9 {
+	margin-left: 208px;
+	margin-top: -10px;
+	width: 500px;
+	height: 7px;
+	background: url(../img/square.png);
+}
+.block-9 {
+	margin-left: 700px;
+	margin-top: -5px;
+	width: 5px;
+	height: 100px;
+	background: url(../img/square.png);
+}
+
+.block-10 {
+	margin-left: 660px;
+	margin-top: -5px;
+	width: 100px;
+	height: 100px;
+	background: url(../img/square.png);
+}
+
+.block-10 p {
+	text-align: center;
+	padding-top: 30px;
+	display: none;
+}
+
+.block-10:hover p {
+	display: block;
+}
